@@ -1,0 +1,3 @@
+[submodule "Day1/my-first-base-project/lib/forge-std"]
+	path = Day1/my-first-base-project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
