@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Red Background -->
+  <rect width="100" height="100" fill="#FF5470" rx="10" ry="10" />
+  
+  <!-- Single White Grass Strand -->
+  <g>
+    <!-- Main Blade -->
+    <path d="M50,85 C50,70 48,55 45,40 C43,30 40,20 35,15 C38,17 42,20 45,25 C47,30 48,35 50,40 C52,35 53,30 55,25 C58,20 62,17 65,15 C60,20 57,30 55,40 C52,55 50,70 50,85 Z" 
+          fill="#FFFFFF" stroke="none" />
+    
+    <!-- Highlight Detail -->
+    <path d="M50,85 C50,70 48,55 45,40 C43,30 40,20 35,15" 
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M50,40 C52,35 53,30 55,25 C58,20 62,17 65,15" 
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

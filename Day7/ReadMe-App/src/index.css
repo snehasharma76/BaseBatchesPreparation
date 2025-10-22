@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neo-brutalist light theme styles */
+@layer base {
+  body {
+    @apply bg-paper text-dark font-sans min-h-screen;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-dark;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  a {
+    @apply text-primary-500 hover:text-accent-500 transition-colors;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  ::selection {
+    @apply bg-primary-500 text-white;
+  }
+}
+
+@layer components {
+  /* Card styles */
+  .sleek-card {
+    @apply bg-white border-2 border-dark p-4 transition-all shadow-brutal;
+  }
+  
+  .sleek-card-primary {
+    @apply bg-white border-2 border-primary-500 p-4 shadow-brutal-colored;
+  }
+  
+  .sleek-card-accent {
+    @apply bg-white border-2 border-accent-500 p-4 shadow-brutal-accent;
+  }
+  
+  /* Button styles */
+  .sleek-button {
+    @apply px-4 py-2 bg-white border-2 border-dark font-medium text-dark
+    hover:bg-neo-gray hover:border-dark transition-all shadow-brutal-sm;
+  }
+  
+  .sleek-button-primary {
+    @apply px-4 py-2 bg-primary-500 border-2 border-dark font-medium text-white
+    hover:bg-primary-600 transition-all shadow-brutal-sm;
+  }
+  
+  .sleek-button-accent {
+    @apply px-4 py-2 bg-accent-500 border-2 border-dark font-medium text-white
+    hover:bg-accent-600 transition-all shadow-brutal-sm;
+  }
+
+  /* Input styles */
+  .sleek-input {
+    @apply border-2 border-dark bg-white text-dark p-2 
+    focus:outline-none focus:border-primary-500 w-full shadow-brutal-sm;
+  }
+  
+  /* Badge styles */
+  .sleek-badge {
+    @apply px-2 py-1 text-sm font-medium border-2 border-current;
+  }
+  
+  /* Responsive container */
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl;
+  }
+  
+  /* Card hover effect */
+  .card-hover {
+    @apply hover:-translate-y-1 transition-transform duration-200;
+  }
+
+  /* Neo-brutalist elements */
+  .neo-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  }
+  
+  .neo-text {
+    @apply font-display font-bold;
+  }
+
+  .neo-border {
+    @apply border-2 border-dark;
+  }
+
+  .neo-border-primary {
+    @apply border-2 border-primary-500;
+  }
+
+  .neo-border-accent {
+    @apply border-2 border-accent-500;
+  }
+  
+  /* Neo color badges */
+  .badge-blue {
+    @apply text-neo-blue border-neo-blue;
+  }
+  
+  .badge-green {
+    @apply text-neo-green border-neo-green;
+  }
+  
+  .badge-yellow {
+    @apply text-neo-yellow border-neo-yellow;
+  }
+  
+  .badge-purple {
+    @apply text-neo-purple border-neo-purple;
+  }
+  
+  .badge-coral {
+    @apply text-neo-coral border-neo-coral;
+  }
+}

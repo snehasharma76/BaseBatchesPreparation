@@ -1,0 +1,29 @@
+{
+    "accountAssociation": {
+        "header": "eyJmaWQiOjEzNzQ0MzYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg2ZGJBMDAxQ0JBZjFiOWY1MDY4MjkyOUYwNzRENDVmMjczM0YwMUExIn0",
+        "payload": "eyJkb21haW4iOiJ0b3VjaC1ncmFzcy1hcHAudmVyY2VsLmFwcCJ9",
+        "signature": "MHg5ZWEyOGY5MjUxM2FmYTU0OTZhZGJhNDNiZTYxZGZhODkzY2Q5MDYzYjEzMDU4YTJjMzAyYjM0ZjBiMGRmNDI3Mzc3MWEzMmRkMWEyYzU4NzliYjNjYWZhNzdiYWRlMmYwNzU1NDliMjA3OWZmNDg5YzFmODkxNDFmYTBjYjU1YTFj"
+    },
+    "baseBuilder": {
+        "allowedAddresses": [""]
+    },
+    "miniapp": {
+      "version": "1",
+      "name": "TouchGrass", 
+      "subtitle": "Dont stay online too much", 
+      "description": "Screentime alert",
+      "screenshotUrls": ["https://touch-grass-app.vercel.app/screenshot.png"],
+      "iconUrl": "https://touch-grass-app.vercel.app/icon.png",
+      "splashImageUrl": "https://touch-grass-app.vercel.app/name.png",
+      "splashBackgroundColor": "#000000",
+      "homeUrl": "https://touch-grass-app.vercel.app/",
+      "webhookUrl": "https://touch-grass-app.vercel.app/api/webhook",
+      "primaryCategory": "productivity",
+      "tags": ["time", "online", "screentime" ],
+      "heroImageUrl": "https://touch-grass-app.vercel.app/icon.png", 
+      "tagline": "Go Touch Grass",
+      "ogTitle": "Touch Grass",
+      "ogDescription": "Dont stay online too much. Go Touch Grass",
+      "ogImageUrl": "https://touch-grass-app.vercel.app/icon.png"
+    }
+}

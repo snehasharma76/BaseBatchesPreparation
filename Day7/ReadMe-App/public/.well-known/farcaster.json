@@ -1,0 +1,29 @@
+{
+    "accountAssociation": {
+        "header": "eyJmaWQiOjEzNzQ0MzYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg2ZGJBMDAxQ0JBZjFiOWY1MDY4MjkyOUYwNzRENDVmMjczM0YwMUExIn0",
+        "payload": "eyJkb21haW4iOiJyZWFkLW1lLWFwcC52ZXJjZWwuYXBwIn0",
+        "signature": "MHg0MzcwZTlkZWZjMjM0MTg4NzUyZjM5NDY2YTRjMGM3YzkxZWJjOTdkMjM4MDExMjk4NTg5YWNkNDdmYWEyODg3NWNkMGUwM2M4NGVjNzY5NjViOWZjMWRmNWI5N2ZiNTY2MTk5MjAyOTVjODJmMjc1Y2U3NzFjNTBjNDQ1ZjMxODFj"
+      },
+    "baseBuilder": {
+        "allowedAddresses": ["0x8f924E1b878f661ae1A856d26A7A190b243653Dc"]
+    },
+    "miniapp": {
+      "version": "1",
+      "name": "ReadMe",
+      "subtitle": "Stay on top of Topics", 
+      "description": "Screentime alert",
+      "screenshotUrls": ["https://read-me-app.vercel.app/screenshot.png"],
+      "iconUrl": "https://read-me-app.vercel.app/icon.png",
+      "splashImageUrl": "https://read-me-app.vercel.app/name.png",
+      "splashBackgroundColor": "#000000",
+      "homeUrl": "https://read-me-app.vercel.app/",
+      "webhookUrl": "https://read-me-app.vercel.app/api/webhook",
+      "primaryCategory": "productivity",
+      "tags": ["casts", "curated", "filter", "topic", "crypto" ],
+      "heroImageUrl": "https://read-me-app.vercel.app/icon.png", 
+      "tagline": "find the right casts",
+      "ogTitle": "ReadMe",
+      "ogDescription": "Find Casts on specific topics",
+      "ogImageUrl": "https://read-me-app.vercel.app/icon.png"
+    }
+}
