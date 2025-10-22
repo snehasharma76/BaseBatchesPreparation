@@ -1,0 +1,307 @@
+/**
+ * Application Styles
+ * 
+ * Main stylesheet for the Paymaster Demo application.
+ * Uses CSS custom properties (variables) for consistent theming.
+ * 
+ * Structure:
+ * - CSS Variables (Design tokens)
+ * - Global resets
+ * - Layout components
+ * - UI components
+ * - Utility classes
+ */
+
+/* ==================== CSS Variables ==================== */
+:root {
+  /* Brand Colors */
+  --primary-color: #0052ff;
+  --coinbase-blue: #0052ff;
+  --secondary-color: #1e293b;
+  --accent-color: #0a84ff;
+  
+  /* UI Colors */
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+  --error-color: #ef4444;
+  --success-color: #10b981;
+  --border-color: #e2e8f0;
+}
+
+/* ==================== Global Resets ==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ==================== Layout Components ==================== */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  opacity: 0.7;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+}
+
+/* ==================== UI Components ==================== */
+/* Main container for the claim reward functionality */
+.claim-reward-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.claim-reward-container h2 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.claim-reward-container .subtitle {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 82, 255, 0.1);
+}
+
+/* Button container */
+.buttons {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Base button styles */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 82, 255, 0.2);
+}
+
+button:hover {
+  background-color: #0045d1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px -2px rgba(0, 82, 255, 0.3);
+}
+
+.coinbase-button {
+  background-color: var(--coinbase-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.disconnect-button {
+  background-color: #64748b;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.disconnect-button:hover {
+  background-color: #475569;
+}
+
+.coinbase-button::before {
+  content: '';
+  display: inline-block;
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="white"/><path d="M12.0001 4.80005C8.02354 4.80005 4.8001 8.02349 4.8001 12C4.8001 15.9766 8.02354 19.2 12.0001 19.2C15.9766 19.2 19.2001 15.9766 19.2001 12C19.2001 8.02349 15.9766 4.80005 12.0001 4.80005ZM15.0001 13.2H12.0001C11.3373 13.2 10.8001 12.6628 10.8001 12V8.40005C10.8001 7.73726 11.3373 7.20005 12.0001 7.20005C12.6629 7.20005 13.2001 7.73726 13.2001 8.40005V10.8H15.0001C15.6629 10.8 16.2001 11.3373 16.2001 12C16.2001 12.6628 15.6629 13.2 15.0001 13.2Z" fill="%230052FF"/></svg>');
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+button:disabled {
+  background-color: #a3bffa;
+  cursor: not-allowed;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.wallet-info span {
+  background-color: #f0f9ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Error message display */
+.error-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #fef2f2;
+  color: var(--error-color);
+  border-radius: 6px;
+  border-left: 4px solid var(--error-color);
+}
+
+/* Transaction information display */
+.transaction-info {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f9ff;
+  border-radius: 6px;
+  border: 1px solid #bae6fd;
+}
+
+.transaction-info h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.transaction-info p {
+  margin-bottom: 0.5rem;
+}
+
+.gas-estimate-info {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-radius: 6px;
+  border: 1px solid #86efac;
+}
+
+.gas-estimate-info h3 {
+  color: #059669;
+  margin-bottom: 0.75rem;
+}
+
+.gas-estimate-info p {
+  margin-bottom: 0.5rem;
+}
+
+.gas-note {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.debug-button {
+  background-color: #6b7280;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.debug-button:hover {
+  background-color: #4b5563;
+}
+
+.debug-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+  border: 1px dashed #94a3b8;
+  text-align: left;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.debug-info h4 {
+  margin-bottom: 0.75rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.debug-info p {
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}

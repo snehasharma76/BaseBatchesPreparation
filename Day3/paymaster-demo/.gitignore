@@ -1,0 +1,155 @@
+# ============================================
+# Paymaster Demo - Git Ignore Configuration
+# ============================================
+
+# ----------------
+# Dependencies
+# ----------------
+node_modules/
+jspm_packages/
+bower_components/
+
+# ----------------
+# Build Outputs
+# ----------------
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.vite/
+
+# ----------------
+# Environment Variables
+# ----------------
+# Never commit sensitive environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# ----------------
+# Logs
+# ----------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ----------------
+# Testing
+# ----------------
+coverage/
+*.lcov
+.nyc_output/
+.jest/
+
+# ----------------
+# OS Files
+# ----------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ----------------
+# Editor/IDE
+# ----------------
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ----------------
+# Temporary Files
+# ----------------
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+*.orig
+
+# ----------------
+# Package Manager Locks (optional - uncomment if needed)
+# ----------------
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ----------------
+# Miscellaneous
+# ----------------
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vercel
+.netlify
+.turbo
+
+# ----------------
+# Debug
+# ----------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ----------------
+# TypeScript
+# ----------------
+*.tsbuildinfo
+next-env.d.ts

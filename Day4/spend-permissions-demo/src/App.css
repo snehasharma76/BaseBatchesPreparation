@@ -1,0 +1,151 @@
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.app-subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-info {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.app-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.app-value {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.app-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.app-button {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.app-button:hover:not(:disabled) {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+.app-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.app-success {
+  padding: 20px;
+  background: #d4edda;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  color: #155724;
+  text-align: center;
+}
+
+.app-success-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.app-permission-details {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.app-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.app-detail-label {
+  font-weight: bold;
+  color: #155724;
+}
+
+.app-detail-value {
+  font-family: monospace;
+  color: #155724;
+  word-break: break-all;
+  text-align: right;
+  max-width: 60%;
+}
+
+.app-instructions {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.app-instructions-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.app-instructions-list {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 14px;
+}

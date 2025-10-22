@@ -1,0 +1,15 @@
+{
+  "name": "backend-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "address": "node getAddress.js",
+    "approve": "node approvePermission.js",
+    "spend": "node spendFromPermission.js",
+    "balance": "node checkBalance.js"
+  },
+  "dependencies": {
+    "viem": "^2.38.2",
+    "dotenv": "^16.3.1"
+  }
+}
